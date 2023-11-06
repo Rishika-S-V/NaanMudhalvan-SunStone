@@ -1,6 +1,6 @@
 import Axios from "axios";
 
-export const API_SERVER =  'http://localhost:5000'
+export const API_SERVER =  'https://nm-sunstone.onrender.com'
 
   export const getOrders = async () => {
     const response = await Axios.get(`${API_SERVER}/api/order/all`);
