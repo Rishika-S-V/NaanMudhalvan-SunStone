@@ -43,7 +43,6 @@ userRouter.post('/login', expressAsyncHandler(async (req,res) => {
 // @route   POST /users/register
 // @access  Public
 userRouter.post('/register', expressAsyncHandler(async (req, res) => {
-  console.debug(req.body)
   const {name, email, password} = req.body
 
   const userExists = await User.findOne({email})
